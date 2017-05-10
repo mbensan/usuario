@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags-->
+		<meta charset="utf-8">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Color theme for statusbar -->
+		<meta name="theme-color" content="#2196f3">
+		<!-- Your app title -->
+		<title>Anasac TIC</title>
+		<!-- Path to Framework7 Library CSS, Material Theme -->
+		<link rel="stylesheet" href="node_modules/framework7/dist/css/framework7.material.min.css">
+		<!-- Path to Framework7 color related styles, Material Theme -->
+		<link rel="stylesheet" href="node_modules/framework7/dist/css/framework7.material.colors.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/framework7-icons/css/framework7-icons.css">
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="dist/main.min.css">
+	</head>
+	<body>
+		<!-- Views -->
+		<div class="views">
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+				<div class="pages navbar-fixed">
+					<!-- Page, "data-page" contains page name -->
+					<div data-page="index" class="page">
+
+						<!-- Top Navbar. In Material theme it should be inside of the page-->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="left">
+									<a href="#" class="back link">
+										<i class="icon icon-back"></i>
+										<span>Back</span>
+									</a>
+								</div>
+								<div class="center">Ingreso Nuevo Usuario</div>
+							</div>
+						</div>
+
+						<!-- Scrollable page content -->
+						<div class="page-content">
+							<!-- <h3 class="center">Información Usuario Solicitante</h3> -->
+							<form id="form_user">
+								<div class="list-block">
+									<ul class="row">
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Rut <span class="red">*</span></div>
+													<div class="item-input"><input type="text" name="Title" required></div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Nombres <span class="red">*</span></div>
+													<div class="item-input"><input type="text" name="FirstNames" required></div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Apellidos <span class="red">*</span></div>
+													<div class="item-input"><input type="text" name="LastNames" required></div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Cargo <span class="red">*</span></div>
+													<div class="item-input"><input type="text" name="Position" required></div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Correo</div>
+													<div class="item-input"><input type="email" name="Email"></div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Centro de Costos <span class="red">*</span></div>
+													<div class="item-input"><input type="text" name="CostCenter" required></div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Perfil de Referencia</div>
+													<div class="item-input"><input type="text" name="ReferenceProfile"></div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Sucursal <span class="red">*</span></div>
+													<div class="item-input">
+														<select name="Sucursal" required>
+															<option value="2">Alameda</option>
+															<option value="4">Coquimbo</option>
+															<option value="5">Atacama</option>
+															<option value="7">Concepción</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title floating-label">Observaciones</div>
+													<div class="item-input">
+														<textarea name="Observations" required class="resizable"></textarea>
+													</div>
+												</div>
+											</div>
+										</li>
+
+										<li class="tablet-50 col-100">
+											<div class="item-content">
+												<div class="item-inner">
+													<div class="item-title gray-title">Sistemas Corporativos <span class="red">*</span></div>
+
+													<div class="row">
+														<div class="col-25 tablet-25">Correo</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="Correo">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+
+														<div class="col-25 tablet-25">SAP</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="SAP">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-25 tablet-25">Salfaone</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="Salfaone">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+
+														<div class="col-25 tablet-25">Mundo Net</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="Mundo Net">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+													</div>
+													<div class="row">
+
+														<div class="col-25 tablet-25">VPN</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="VPN">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+
+														<div class="col-25 tablet-25">Fondos a Rendir</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="Fondos a Rendir (intranet)">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+													</div>
+													<div class="row">
+
+														<div class="col-25 tablet-25">Disco NAS</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="Disco NAS">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+
+														<div class="col-25 tablet-25">Disco G</div>
+														<div class="col-25 tablet-25">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="Disco G">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-50 tablet-50">Portal Clientes SalfaRent</div>
+														<div class="col-50 tablet-50">
+															<label class="label-switch">
+																<input type="checkbox" name="CorpateSystems" value="Portal Clientes SalfaRent">
+																<div class="checkbox"></div>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<p class="buttons-row">
+									<a href="#" class="back button button-raised">Cancelar</a>
+									<input type="submit" class="button button-raised button-fill"></input>
+								</p>
+							</form>
+						</div>
+
+						<!-- popovers -->
+						<div class="popover popover-links" id="users_list">
+							<div class="popover-inner">
+								<div class="list-block">
+									<ul>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/template7" id="tApplications">
+		<ul>
+			{{#each applications}}
+			<li>
+				<div class="item-content">
+					<div class="item-inner row">
+						<div class="text-center col-20">{{Title}}</div>
+						<div class="text-center col-20">{{Rut}}</div>
+						<div class="text-center col-20">{{Department}}</div>
+						<div class="text-center col-20">{{ISODate2Human Modified}}</div>
+						<div class="text-center col-20"><a href="#" data-applicationid="{{Id}}" class="button button-raised button-fill summary-button">Ver</a></div>
+					</div>
+				</div>
+			</li>
+			{{else}}
+			<li>
+				<div class="item-content">
+					<div class="item-inner row">
+						<div class="text-center col-100">Actualmente sin solicitudes ...</div>
+					</div>
+				</div>
+			</li>
+			{{/each}}
+		</ul>
+		</script>
+
+		<script type="text/template7" id="tAssetRow">
+			<tr>
+				<td data-assetid="{{AssetId}}">{{Asset}}</td>
+				<td>{{Ammount}}</td>
+				<td data-costcenterid="{{CostCenterId}}">{{CostCenter}}</td>
+				<td>{{RutReceptor}}</td>
+				<td data-reasonid="{{ReasonId}}">{{Reason}}</td>
+			</tr>
+		</script>
+
+		<script type="text/template7" id="tSummaryRow">
+			<div class="row">
+				<div class="tablet-25 col-25">
+						<!-- <div class="item-media"><i class="f7-icons">home</i></div> -->
+					<div class="item-after">Nombre:</div>
+					<div class="tem-title">{{Title}}</div>
+				</div>
+				<div class="tablet-25 col-25">
+					<div class="item-after">Rut:</div>
+					<div class="tem-title">{{Rut}}</div>
+				</div>
+				<div class="tablet-25 col-25">
+					<div class="item-after">Cargo:</div>
+					<div class="item-title">{{JobTitle}}</div>
+				</div>
+				<div class="tablet-25 col-25">
+					<div class="item-after">Teléfono:</div>
+					<div class="item-title">{{MobilePhone}}</div>
+				</div>
+				<div class="tablet-25 col-25">
+					<div class="item-after">Area:</div>
+					<div class="item-title">{{Department}}</div>
+				</div>
+				<div class="tablet-25 col-25">
+					<div class="item-after">Correo:</div>
+					<div class="item-title">{{EMail}}</div>
+				</div>
+				<div class="tablet-25 col-25">
+					<div class="item-after">Sociedad:</div>
+					<div class="item-title">{{Society}}</div>
+				</div>
+				<div class="tablet-25 col-25">
+					<div class="item-after">Direccion de Despacho:</div>
+					<div class="item-title">{{DeliveryAddress}}</div>
+				</div>
+			</div>
+		</script>
+
+		<script type="text/template7" id="tSummaryApplicationAssets">
+			{{#each assets}}
+			<tr>
+				<td>{{Asset}}</td>
+				<td>{{Ammount}}</td>
+				<td>{{CostCenter}}</td>
+				<td>{{RutReceptor}}</td>
+				<td>{{Reason}}</td>
+			</tr>
+			{{/each}}
+		</script>
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="node_modules/framework7/dist/js/framework7.min.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="src/js/request.js"></script>
+		<script type="text/javascript" src="src/js/popup_options.js"></script>
+		<script type="text/javascript" src="src/js/data.js"></script>
+		<script type="text/javascript" src="src/js/dom.js"></script>
+		<script type="text/javascript" src="src/js/callbacks.js"></script>
+		<script type="text/javascript" src="src/js/app.js"></script>
+	</body>
+</html> 

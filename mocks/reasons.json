@@ -1,0 +1,34 @@
+[	
+	{
+		"Id": 1,
+		"Title": "Reposición por Robo (con fuerza contra las personas y/o bienes materiales)"
+	},
+	{
+		"Id": 2,
+		"Title": "Reposición por Hurto (sin fuerza contra las personas y/o bienes materiales)"
+	},
+	{
+		"Id": 3,
+		"Title": "Reposición por Extravío"
+	},
+	{
+		"Id": 4,
+		"Title": "Nuevo Empleado/Cargo"
+	},
+	{
+		"Id": 5,
+		"Title": "Renovación funcional: equipo actual ya no cumple requerim. especificos del usuario. "
+	},
+	{
+		"Id": 6,
+		"Title": "Renovación por obsolescencia técnologica del equipo actual.  "
+	},
+	{
+		"Id": 7,
+		"Title": "Renovación por  falla irreparable del equipo."
+	},
+	{
+		"Id": 8,
+		"Title": "Otro motivo"
+	}
+]

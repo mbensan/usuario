@@ -1,0 +1,26 @@
+<div data-page="about" class="page">
+
+	<!-- Top Navbar. In Material theme it should be inside of the page-->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="back link">
+					<i class="icon icon-back"></i>
+					<span>Back</span>
+				</a>
+			</div>
+			<div class="center">
+				Subgerencia  - Nosotros
+			</div>
+		</div>
+	</div>
+	<!-- Scrollable page content -->
+	<div class="page-content">
+		<p>{{message}}</p>
+		<ul>
+			{{#each items}}
+			<li>{{this}}</li>
+			{{/each}}
+		</ul>
+	</div>
+</div>

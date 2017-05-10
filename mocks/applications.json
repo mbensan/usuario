@@ -1,0 +1,23 @@
+[
+	{
+		"Id": 1,
+		"Item": "Pantalla 19'",
+		"Ammount": 2,
+		"User": "Matias Bensan",
+		"Reason": "Hurto"
+	},
+	{
+		"Id": 2,
+		"Item": "Notebook HP",
+		"Ammount": 5,
+		"User": "Oscar Encina",
+		"Reason": "Pérdida"
+	},
+	{
+		"Id": 3,
+		"Item": "Resma Carta 100 hojas",
+		"Ammount": 10,
+		"User": "Tamara Acuna",
+		"Reason": "Reposición"
+	}
+]

@@ -1,0 +1,116 @@
+<div data-page="equipments_detail" class="page">
+
+	<!-- Top Navbar. In Material theme it should be inside of the page-->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="back link">
+					<i class="icon icon-back"></i>
+					<span>Back</span>
+				</a>
+			</div>
+			<div class="center">Detalle de la Solicitud</div>
+		</div>
+	</div>
+	<!-- Scrollable page content -->
+	<div class="page-content">
+		<div class="data-table data-table-init card" id="table_assets">
+			<table>
+				<thead>
+					<tr>
+						<th class="label-cell">Item</th>
+						<th class="numeric-cell">Número</th>
+						<th class="label-cell">Centro de Costos</th>
+						<th class="label-cell">Rut Receptor</th>
+						<th class="label-cell">Motivo</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+
+		<form class="list-block gray-box" id="form_application_asset">
+			<ul class="row">
+				<li class="tablet-30 col-30">
+					<div class="item-content">
+						<!-- <div class="item-media"><i class="f7-icons">home</i></div> -->
+						<div class="item-inner">
+							<div class="item-title floating-label">Solicito comprar:</div>
+							<div class="item-input"><input type="text" name="Asset" required></div>
+						</div>
+					</div>
+				</li>
+
+				<li class="tablet-20 col-20">
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="item-title floating-label">Número</div>
+							<div class="item-input"><input type="number" name="Ammount" value="1" required min="1"></div>
+						</div>
+					</div>
+				</li>
+
+				<li class="tablet-25 col-25">
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="item-title floating-label">Centro de Costos</div>
+							<div class="item-input">
+								<select name="CostCenter" required>
+									<option value="-1"></option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="tablet-25 col-25">
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="item-title floating-label">Rut del Receptor</div>
+							<div class="item-input"><input type="text" name="RutReceptor" required></div>
+						</div>
+					</div>
+				</li>
+
+				<li class="tablet-50 col-50">
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="item-title floating-label">Motivo</div>
+							<div class="item-input">
+								<select name="Reason" required>
+									<option value="-1"></option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="tablet-25 col-25">
+					<div class="item-content">
+						<div class="item-inner">
+							<div class="item-input">
+								<input type="submit" class="button button-raised button-fill color-green" value="Agregar" />
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</form>
+
+		<p class="buttons-row">
+			<a href="#" class="back button button-raised">Cancelar</a>
+			<a href="pages/confirm.html" class="button button-raised button-fill">Enviar</a>
+		</p>
+	</div>
+
+	<!-- popovers -->
+	<div class="popover popover-links" id="assets_list">
+		<div class="popover-inner">
+			<div class="list-block">
+				<ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>

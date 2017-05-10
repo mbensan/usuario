@@ -1,0 +1,30 @@
+{
+  "name": "usuario",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server",
+    "sass": "npm-sass src/sass/main.scss > dist/main.min.css",
+    "presass": "shx mkdir -p dist",
+    "watch:sass": "watch-run -p 'src/sass/**/*' npm run sass",
+    "lint": "jshint src/js/**"
+  },
+  "author": "Invision",
+  "license": "ISC",
+  "dependencies": {
+    "framework7": "^1.5.4",
+    "framework7-icons": "^0.8.9",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "eslint": "^3.19.0",
+    "http-server": "^0.9.0",
+    "jshint": "^2.9.4",
+    "npm-sass": "^2.0.0",
+    "shx": "^0.2.2",
+    "watch-run": "^1.2.5"
+  }
+}

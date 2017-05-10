@@ -1,0 +1,68 @@
+
+.navbar .center {
+	margin: 0 auto;
+}
+.text-center {
+	text-align: center;
+}
+.popover .list-block li {
+	border-bottom: 1px dotted #888;
+
+	&:last-child {
+		border-bottom-width: 0px;
+	}
+
+	a {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		color: black;
+
+		&:hover {
+			background-color: #A9BCF5;
+		}
+	}
+}
+
+.table-header{
+	font-size: 1.5em;
+	text-align: center;
+	margin: 16px;
+
+}
+#table_assets {
+	display: none;
+}
+
+.data-table {
+	table {
+
+		background-color: #DDD;
+		width: 100%;
+		border-radius: 10px;
+		
+		thead {
+			background-color: #DDD;
+			th {
+				background-color: #03a9f4;
+				color: #FFF;
+				font-weight: normal;
+				text-align: center;
+				padding: 5px;
+			}
+		}
+	}
+}
+
+.gray-box {
+	margin: 30px auto;
+	width: 90%;
+	background-color: #E0E0E0;
+	border-radius: 6px;
+}
+
+// fix for checkboxes
+.gray-title {
+	color: #8f8f8f;
+}
+
